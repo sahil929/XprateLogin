@@ -17,11 +17,14 @@
         <entry key="..\:/Demo2/app/myapplication/src/main/res/layout/fragment_forgot_password.xml" value="0.21893491124260356" />
         <entry key="..\:/Demo2/app/myapplication/src/main/res/layout/fragment_forgot_password_success.xml" value="0.3333333333333333" />
         <entry key="..\:/Demo2/app/myapplication/src/main/res/layout/fragment_login.xml" value="0.16666666666666666" />
-        <entry key="..\:/Demo2/app/myapplication/src/main/res/layout/fragment_register.xml" value="0.3333333333333333" />
+        <entry key="..\:/Demo2/app/myapplication/src/main/res/layout/fragment_register.xml" value="0.27988338192419826" />
         <entry key="..\:/Demo2/app/myapplication/src/main/res/layout/fragment_register_success.xml" value="0.13333333333333333" />
         <entry key="..\:/Demo2/app/myapplication/src/main/res/layout/layout_terms_conditions.xml" value="0.33647798742138363" />
         <entry key="..\:/Demo2/app/myapplication/src/main/res/layout/tooltip_layout.xml" value="0.6" />
         <entry key="..\:/Demo2/app/src/main/res/layout/activity_main.xml" value="0.16770833333333332" />
+        <entry key="..\:/Demo2/myapplication/src/main/res/layout/activity_base.xml" value="0.16770833333333332" />
+        <entry key="..\:/Demo2/myapplication/src/main/res/layout/fragment_register.xml" value="0.16770833333333332" />
+        <entry key="..\:/Demo2/myapplication/src/main/res/layout/fragment_register_success.xml" value="0.16770833333333332" />
       </map>
     </option>
   </component>
