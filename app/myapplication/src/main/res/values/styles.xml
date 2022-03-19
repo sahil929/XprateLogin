@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <item name="textInputStyle">@style/CustomFontTextInputLayout</item>
+    </style>
+    <style name="CustomFontTextInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="hintTextAppearance">@style/TextInputLayoutHintText</item>
+        <item name="helperTextTextAppearance">@style/TextInputLayoutHelperText</item>
+        <item name="errorTextAppearance">@style/TextInputLayoutErrorText</item>
+        <item name="textOutlineColor">@color/color_black</item>
+    </style>
+    <style name="TextInputLayoutHintText" parent="TextAppearance.Design.Hint">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/color_black</item>
+    </style>
+    <style name="TextInputLayoutHelperText" parent="TextAppearance.Design.HelperText">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="TextInputLayoutErrorText" parent="TextAppearance.Design.Error">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/error_color</item>
+    </style>
+    <style name="EditTextThemeOverlay" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/color_black</item>
+    </style>
+</resources>

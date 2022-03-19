@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/loginFragment"
+    android:id="@+id/nav_graph">
+  <fragment
+      android:id="@+id/loginFragment"
+      android:name="com.example.myapplication.fragments.login.LoginFragment">
+     </fragment>
+  <action
+      android:id="@+id/registerScreen"
+      app:destination="@id/registerFragment"
+      app:enterAnim="@anim/nav_default_enter_anim"
+      app:exitAnim="@anim/nav_default_exit_anim"/>
+  <action
+      android:id="@+id/loginScreen"
+      app:destination="@id/loginFragment"
+      app:enterAnim="@anim/nav_default_enter_anim"
+      app:exitAnim="@anim/nav_default_exit_anim"/>
+  <action
+      android:id="@+id/forgotPasswordScreen"
+      app:destination="@id/forgotPasswordFragment"
+      app:enterAnim="@anim/nav_default_enter_anim"
+      app:exitAnim="@anim/nav_default_exit_anim"/>
+  <action
+      android:id="@+id/forgotPasswordSuccessScreen"
+      app:destination="@id/forgotPasswordSuccessFragment"
+      app:enterAnim="@anim/nav_default_enter_anim"
+      app:exitAnim="@anim/nav_default_exit_anim"/>
+  <action
+      android:id="@+id/registerSuccessScreen"
+      app:destination="@id/registerSuccessFragment"
+      app:enterAnim="@anim/nav_default_enter_anim"
+      app:exitAnim="@anim/nav_default_exit_anim"/>
+
+  <fragment
+      android:id="@+id/registerFragment"
+      android:name="com.example.myapplication.fragments.register.RegisterFragment">
+  </fragment>
+  <fragment
+      android:id="@+id/forgotPasswordFragment"
+      android:name="com.example.myapplication.fragments.forgotPassword.ForgotPasswordFragment">
+  </fragment>
+  <fragment
+    android:id="@+id/forgotPasswordSuccessFragment"
+      android:name="com.example.myapplication.fragments.forgotPassword.ForgotPasswordSuccessFragment"/>
+  <fragment
+      android:id="@+id/registerSuccessFragment"
+      android:name="com.example.myapplication.fragments.register.RegisterSuccessFragment"
+      android:label="RegisterSuccessFragment" />
+</navigation>

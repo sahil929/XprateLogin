@@ -1,0 +1,81 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+ext {
+    defaultCompileSdkVersion = 31
+    defaultTargetSdkVersion = 30
+    defaultSupportLibVersion = "28.0.0"
+    //design
+    androidXMaterial = 'com.google.android.material:material:'+project.ext.materialVersion
+    appCompact='androidx.appcompat:appcompat:'+project.ext.appCompactVersion
+    androidXCardView = 'androidx.cardview:cardview:'+project.ext.androidXCardViewVersion
+    //retrofit
+    retrofit = 'com.squareup.retrofit2:retrofit:'+project.ext.retrofitVersion
+    gson = 'com.squareup.retrofit2:converter-gson:'+project.ext.gsonVersion
+    okhttp = 'com.squareup.okhttp3:logging-interceptor:'+project.ext.okHttpVersion
+    androidXCoreKtx = 'androidx.core:core-ktx:'+project.ext.androidXCoreKtxVersion
+    androidXConstraint = 'androidx.constraintlayout:constraintlayout:'+project.ext.androidXConstraintVersion
+    coroutine = 'org.jetbrains.kotlinx:kotlinx-coroutines-android:'+project.ext.coroutineVersion
+    navigation= 'androidx.navigation:navigation-fragment-ktx:'+project.ext.nav_version
+    navigationUI= 'androidx.navigation:navigation-ui-ktx:'+project.ext.nav_version
+    coroutineCoreKtx= 'org.jetbrains.kotlinx:kotlinx-coroutines-core:'+project.ext.coroutinesCoreKtxVersion
+    glide = 'com.github.bumptech.glide:glide:'+project.ext.glide
+}
+android {
+    compileSdk rootProject.hasProperty("compileSdk") ? rootProject.compileSdk : defaultCompileSdkVersion
+    defaultConfig {
+        minSdk 21
+        targetSdk rootProject.hasProperty("targetSdk")? rootProject.targetSdk : defaultTargetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            minifyEnabled true
+        }
+    }
+    buildTypes.each {
+        it.buildConfigField 'String', 'BASE_URL', baseUrl
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+}
+
+dependencies {
+    implementation androidXMaterial
+    implementation appCompact
+    implementation androidXCardView
+    implementation retrofit
+    implementation gson
+    implementation okhttp
+    implementation androidXCoreKtx
+    implementation androidXConstraint
+    implementation coroutine
+    implementation coroutineCoreKtx
+    implementation navigation
+    implementation navigationUI
+    implementation appCompact
+    implementation glide
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
+}

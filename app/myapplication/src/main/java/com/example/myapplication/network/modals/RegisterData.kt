@@ -1,0 +1,33 @@
+package com.example.myapplication.network.modals
+
+data class RegisterData(
+    val code: String,
+    val createdAt: String,
+    val followersCount: Int,
+    val followingsCount: Int,
+    val hasTakenOath: Boolean,
+    val headLine: String,
+    val id: String,
+    val identities: List<Identity>,
+    val interestsFollowed: List<Any>,
+    val invitedBy: Any,
+    val isAdmin: Boolean,
+    val isComplaintSectionVisible: Boolean,
+    val isOrganisationVerified: Boolean,
+    val isPasswordRequired: Boolean,
+    val isPostingDisabled: Boolean,
+    val lastPostedPost: String,
+    val name: String,
+    val overallRating: Int,
+    val picMedia: Any,
+    val pinnedPost: Any,
+    val qrMedia: Any,
+    val ratersCount: Int,
+    val recommendedUsers: List<String>,
+    val scoreCard: Any,
+    val status: String,
+    val subscription: Any,
+    val token: String,
+    val updatedAt: String,
+    val username: String
+)

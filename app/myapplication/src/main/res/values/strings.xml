@@ -1,0 +1,27 @@
+<resources>
+    <string name="connect_xprate">Connect XpRate</string>
+    <string name="xprate_signup">XpRate Sign Up</string>
+    <string name="email">Email <font color='#fc3131'>*</font></string>
+    <string name="full_name">Full Name<font color='#fc3131'>*</font></string>
+    <string name="password">Password <font color='#fc3131'>*</font></string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="forgot_xprate_password">Forgot XpRate Password</string>
+    <string name="start_to_peek">Start To Peek</string>
+    <string name="login_to_peek">Login To Peek</string>
+    <string name="text_made_in_india">Made with ❤️ in India</string>
+    <string name="xprate">XpRate</string>
+    <string name="how_it_works">How it works</string>
+    <string name="terms_condition_content">To make XpRate work, we log user data and share it with service providers.\n Click above button to accept XpRate\'s.</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="signup">Sign Up</string>
+    <string name="create_an_account">Create an account to review and rate any profile or organisation. Make sure to follow authors to whose rating matters to you.</string>
+    <string name="reset_password_link">Get Reset Password Link</string>
+    <string name="cool_okay">Cool, Okay!</string>
+    <string name="forgot_password_success">If your provided email exist in our XpRate system, then you will receive the password reset mail shortly. You can reset the your XpRate password by one click in you received mail. Please check mail inbox or other mail receiving folders of email.</string>
+    <string name="just_one_step_away">Just One Step Away!</string>
+    <string name="register_success">We have sent you a verification email.Please check mail inbox or other mail receiving folders of email like social/promotions etc. Just click the link you received in mail. Then login with your password.</string>
+    <string name="connecting">Connecting</string>
+    <string name="tooltip">Password must be eight characters long and should contains a digit, a lower, upper case letter, a special character (?= *[@#$%^&amp;+=])</string>
+</resources>
