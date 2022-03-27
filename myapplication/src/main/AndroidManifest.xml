@@ -3,10 +3,6 @@
     package="com.example.myapplication">
    <uses-permission android:name="android.permission.INTERNET"/>
     <application>
-        <activity
-            android:name=".BaseActivity"
-            android:exported="false"
-            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>
