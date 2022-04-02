@@ -33,7 +33,7 @@ android {
                 release(MavenPublication) {
                     from components.release
                     groupId = 'com.github.sahil929'
-                    artifactId = 'XprateLogin'
+                    artifactId = 'Demo'
                     version ='0.1.3'
                 }
             }
