@@ -34,7 +34,7 @@ android {
                     from components.release
                     groupId = 'com.github.sahil929'
                     artifactId = 'XprateLogin'
-                    version ='0.1.2'
+                    version ='0.1.3'
                 }
             }
         }
